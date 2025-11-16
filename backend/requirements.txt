@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+python-multipart
+pdfminer.six
+docx2txt
+rapidfuzz
+sentence-transformers
+scikit-learn
+pydantic
