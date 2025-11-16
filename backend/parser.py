@@ -42,7 +42,7 @@ def extract_skills(text: str, skill_list: List[str], threshold: int = 85) -> Lis
     found_skills = set()
     # Using rapidfuzz.process.extract to find all matches above the threshold
     # This is more efficient than looping and checking one by one
-    matches = process.extract(text, skill_list, scorer=fuzz.PARTIAL_RATIO, limit=None, score_cutoff=threshold)
+    matches = process.extract(text, skill_list, scorer=fuzz.partial_ratio, limit=None, score_cutoff=threshold)
     
     for skill, score, _ in matches:
         found_skills.add(skill)

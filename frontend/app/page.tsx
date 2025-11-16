@@ -144,20 +144,20 @@ export default function HomePage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* --- Column 1: Input Form --- */}
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <h2 className="text-xl font-semibold mb-4">Input Details</h2>
+            <h2 className="text-xl font-semibold mb-4 text-gray-900">Input Details</h2>
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Job Description */}
               <div>
                 <label
                   htmlFor="jobDescription"
-                  className="block text-sm font-medium text-gray-700"
+                  className="block text-sm font-medium text-blue-600"
                 >
                   Job Description
                 </label>
                 <textarea
                   id="jobDescription"
                   rows={10}
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-2"
+                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-2 text-blue-700"
                   placeholder="Paste the job description here..."
                   value={jobDescription}
                   onChange={(e) => setJobDescription(e.target.value)}
@@ -168,7 +168,7 @@ export default function HomePage() {
               <div>
                 <label
                   htmlFor="resumeFile"
-                  className="block text-sm font-medium text-gray-700"
+                  className="block text-sm font-medium text-blue-600"
                 >
                   Candidate Resume (.pdf, .docx)
                 </label>
@@ -201,7 +201,7 @@ export default function HomePage() {
 
           {/* --- Column 2: Results --- */}
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <h2 className="text-xl font-semibold mb-4">Ranking Result</h2>
+            <h2 className="text-xl font-semibold mb-4 text-gray-900">Ranking Result</h2>
             <div className="flex flex-col items-center justify-center min-h-[300px]">
               {/* Loading State */}
               {isLoading && (
